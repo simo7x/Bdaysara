@@ -247,8 +247,8 @@ p {
 }
 
 .person {
-  width: 100px; /* Adjust the size of the person frame */
-  height: 200px;
+  width: 50px; /* Adjust the size of the person frame */
+  height: 100px;
   position: absolute;
   bottom: 0;
   animation: coupleAnimation 5s infinite alternate; /* Adjust duration and other properties as needed */
@@ -259,7 +259,7 @@ p {
 }
 
 .person1 {
-  left: 25%; /* Adjust the starting position */
+  left: 75%; /* Adjust the starting position */
   background-image: url('https://github.com/simo7x/Bdaysara/blob/main/simosd-removebg-preview.png');
 }
 
