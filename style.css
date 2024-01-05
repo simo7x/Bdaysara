@@ -10,8 +10,7 @@ body {
 }
 body {
   position: relative;
-  background: radial-gradient(ellipse at center, #000000 0%, #000000 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#000000', GradientType=1);
+  background: #000000; /* Dark sky color */
 }
 
 body::before {
@@ -22,27 +21,25 @@ body::before {
   width: 100%;
   height: 100%;
   pointer-events: none;
-  background: none;
+  background: url('https://www.transparenttextures.com/patterns/night-sky.png'); /* Dark sky pattern */
   animation: fireworks 4s infinite;
 }
 
 @keyframes fireworks {
-  0% {
-    background: radial-gradient(ellipse at center, #ff0000 0%, #000000 100%);
+  0%, 100% {
+    background: url('https://www.transparenttextures.com/patterns/night-sky.png'); /* Dark sky pattern */
   }
   25% {
-    background: radial-gradient(ellipse at center, #ffff00 0%, #000000 100%);
+    background: url('https://www.transparenttextures.com/patterns/fireworks.png'); /* Fireworks pattern */
   }
   50% {
-    background: radial-gradient(ellipse at center, #00ff00 0%, #000000 100%);
+    background: url('https://www.transparenttextures.com/patterns/night-sky.png'); /* Dark sky pattern */
   }
   75% {
-    background: radial-gradient(ellipse at center, #0000ff 0%, #000000 100%);
-  }
-  100% {
-    background: radial-gradient(ellipse at center, #ff00ff 0%, #000000 100%);
+    background: url('https://www.transparenttextures.com/patterns/fireworks.png'); /* Fireworks pattern */
   }
 }
+
 
 /* ============================================== POSITION
 */
