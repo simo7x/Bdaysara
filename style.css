@@ -11,6 +11,7 @@ body {
 body {
   position: relative;
   background: #000000; /* Dark sky color */
+  overflow: hidden;
 }
 
 body::before {
@@ -21,10 +22,25 @@ body::before {
   width: 100%;
   height: 100%;
   pointer-events: none;
-  background: url('https://www.transparenttextures.com/patterns/night-sky.png'); /* Dark sky pattern */
-  animation: fireworks 4s infinite;
+  background: url('https://www.transparenttextures.com/patterns/night-sky.png'); /* Night sky pattern with stars */
+  animation: starsAndPlanets 20s linear infinite;
 }
+
+@keyframes starsAndPlanets {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+  50% {
+    transform: translate(0, 0);
+  }
+  75% {
+    transform: translate(50%, 50%) scale(1.2);
+  }
 }
+
 
 
 /* ============================================== POSITION
