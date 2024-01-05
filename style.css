@@ -248,7 +248,7 @@ p {
 .person {
   width: 50px;
   height: 100px;
-  background-color: #ff66b2; /* Rosy color for the persons */
+  background:url('https://upload.wikimedia.org/wikipedia/commons/d/d8/Person_icon_BLACK-01.svg') */
   position: absolute;
   bottom: 0;
   animation: coupleAnimation 5s infinite alternate; /* Adjust duration and other properties as needed */
