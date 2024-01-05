@@ -27,7 +27,13 @@ if (navigator.getUserMedia_) {
       microphone.connect(analyser);
       analyser.connect(javascriptNode);
       javascriptNode.connect(audioContext.destination);
-    
+
+         // Load Happy Birthday song
+      var audio = new Audio('main/happy_birthday.mp3'); // replace with the actual path
+      audio.crossOrigin = 'anonymous';
+      audio.loop = true;
+      audio.play();
+      
       var flameTimer = 0;
 
       javascriptNode.onaudioprocess = function() {
