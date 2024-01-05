@@ -252,7 +252,7 @@ p {
   position: absolute;
   bottom: 0;
   animation: coupleAnimation 5s infinite alternate;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 10px;
