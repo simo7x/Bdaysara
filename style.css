@@ -213,14 +213,17 @@ p {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  color: #d300ff; /* Neon lilac text color */
 }
+
 h1 {
-  color: #6d3826;
   font-size: 2em;
   margin-top: 9.4em;
 }
+
 p {
-  color: rgba(236, 231, 227, 0.6);
   font-size: 1em;
   line-height: 2em;
+  color: rgba(211, 0, 255, 0.6); /* Neon lilac text color with some transparency */
 }
+
