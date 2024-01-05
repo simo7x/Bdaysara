@@ -29,7 +29,7 @@ if (navigator.getUserMedia_) {
       javascriptNode.connect(audioContext.destination);
 
          // Load Happy Birthday song
-      var audio = new Audio('https://raw.githubusercontent.com/simo7x/Bdaysara/main/Happy_Birthday.mp3'); // replace with the actual path
+      var audio = new Audio('https://github.com/simo7x/Bdaysara/releases/tag/v1.0.0'); // replace with the actual path
       audio.crossOrigin = 'anonymous';
       audio.loop = true;
       audio.play();
