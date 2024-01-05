@@ -9,9 +9,22 @@ body {
   height: 100%;
 }
 body {
-  background: radial-gradient(ellipse at center, #f4d03f 0%, #f39c12 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f4d03f', endColorstr='#f39c12', GradientType=1);
+  position: relative;
+  background: radial-gradient(ellipse at center, #000000 0%, #000000 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#000000', GradientType=1);
 }
+
+body::before {
+  content: " ";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background-image: url('https://www.transparenttextures.com/patterns/stardust.png'); /* Add the URL to your star image */
+}
+
 /* ============================================== POSITION
 */
 .cake {
@@ -108,7 +121,7 @@ body {
     transform: translateY(-60px) scale(0);
   }
   100% {
-    background: #f4d03f; /* Change this color to the yellow shade you prefer */
+    background: rgba(254, 248, 97, 0.5);
     transform: translateY(0) scale(1);
   }
 }
@@ -122,7 +135,7 @@ body {
     transform: translateY(-60px) scale(0);
   }
   100% {
-    background: #f4d03f; /* Change this color to the yellow shade you prefer */
+    background: rgba(254, 248, 97, 0.5);
     transform: translateY(0) scale(1);
   }
 }
