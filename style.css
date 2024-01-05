@@ -247,8 +247,8 @@ p {
 }
 
 .person {
-  width: 386px; /* Adjust the size of the person frame */
-  height: 646px;
+  width: 38600px; /* Adjust the size of the person frame */
+  height: 64600px;
   position: absolute;
   bottom: 0;
   animation: coupleAnimation 5s infinite alternate; /* Adjust duration and other properties as needed */
