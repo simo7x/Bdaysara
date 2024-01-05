@@ -259,7 +259,8 @@ p {
 }
 
 .person1 {
-  left: 75%; /* Adjust the starting position */
-  background-image: url('https://github.com/simo7x/Bdaysara/blob/main/simosd-removebg-preview.png');
+  left: 75%;
+  background-image: url('https://github.com/simo7x/Bdaysara/raw/main/simosd-removebg-preview.png');
 }
+
 
