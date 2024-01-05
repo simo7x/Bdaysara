@@ -9,9 +9,9 @@ body {
   height: 100%;
 }
 body {
-  position: relative;
-  background: #000000; /* Dark sky color */
-  overflow: hidden;
+ position: relative;
+  background: radial-gradient(ellipse at center, #000000 0%, #000000 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#000000', GradientType=1);
 }
 
 body::before {
@@ -22,24 +22,9 @@ body::before {
   width: 100%;
   height: 100%;
   pointer-events: none;
-  background: url('https://www.transparenttextures.com/patterns/night-sky.png'); /* Night sky pattern with stars */
-  animation: starsAndPlanets 20s linear infinite;
+  background-image: url('https://www.transparenttextures.com/patterns/stardust.png'); /* Add the URL to your star image */
 }
 
-@keyframes starsAndPlanets {
-  0%, 100% {
-    transform: translate(0, 0);
-  }
-  25% {
-    transform: translate(-50%, -50%) scale(1.2);
-  }
-  50% {
-    transform: translate(0, 0);
-  }
-  75% {
-    transform: translate(50%, 50%) scale(1.2);
-  }
-}
 
 
 
