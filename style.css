@@ -108,7 +108,7 @@ body {
     transform: translateY(-60px) scale(0);
   }
   100% {
-    background: rgba(254, 248, 97, 0.5);
+    background: #f4d03f; /* Change this color to the yellow shade you prefer */
     transform: translateY(0) scale(1);
   }
 }
@@ -122,7 +122,7 @@ body {
     transform: translateY(-60px) scale(0);
   }
   100% {
-    background: rgba(254, 248, 97, 0.5);
+    background: #f4d03f; /* Change this color to the yellow shade you prefer */
     transform: translateY(0) scale(1);
   }
 }
