@@ -233,6 +233,7 @@ p {
 }
 
 /* ==============================================  Couple animation */
+/* Couple animation */
 @keyframes coupleAnimation {
   0% {
     transform: translateX(-50%) translateY(-50%);
@@ -246,18 +247,19 @@ p {
 }
 
 .person {
-  width: 100px; /* Adjust the size of the person frame */
-  height: 200px;
+  width: 386px; /* Adjust the size of the person frame */
+  height: 646px;
   position: absolute;
   bottom: 0;
   animation: coupleAnimation 5s infinite alternate; /* Adjust duration and other properties as needed */
-  background-size: cover; /* Ensure the background image covers the container */
+  background-size: cover; /* Scale the image to cover the entire container */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
   background-position: center; /* Center the background image */
   border-radius: 10px; /* Optional: Add rounded corners to the person frame */
 }
 
-.person1 {
-  left: 25%; /* Adjust the starting position */
+
+.person2 {
+  left: 75%; /* Adjust the starting position */
   background-image: url('https://github.com/simo7x/Bdaysara/blob/main/simosd-removebg-preview.png');
 }
-
