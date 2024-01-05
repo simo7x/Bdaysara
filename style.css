@@ -9,7 +9,6 @@ body {
   height: 100%;
 }
 body {
-  background: #f4d03f; /* Change this color to the yellow shade you prefer */
   background: radial-gradient(ellipse at center, #f4d03f 0%, #f39c12 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f4d03f', endColorstr='#f39c12', GradientType=1);
 }
