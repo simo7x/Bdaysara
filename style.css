@@ -247,19 +247,24 @@ p {
 }
 
 .person {
-  width: 38600px; /* Adjust the size of the person frame */
-  height: 64600px;
+  width: 386px;
+  height: 646px;
   position: absolute;
   bottom: 0;
-  animation: coupleAnimation 5s infinite alternate; /* Adjust duration and other properties as needed */
-  background-size: cover; /* Scale the image to cover the entire container */
-  background-repeat: no-repeat; /* Prevent the image from repeating */
-  background-position: center; /* Center the background image */
-  border-radius: 10px; /* Optional: Add rounded corners to the person frame */
+  animation: coupleAnimation 5s infinite alternate;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 10px;
+  background-color: rgba(255, 0, 0, 0.2); /* Red background for debugging */
 }
 
+.person1 {
+  left: 25%;
+  background-image: url('https://github.com/simo7x/Bdaysara/blob/main/simosd-removebg-preview.png');
+}
 
 .person2 {
-  left: 75%; /* Adjust the starting position */
+  left: 75%;
   background-image: url('https://github.com/simo7x/Bdaysara/blob/main/simosd-removebg-preview.png');
 }
