@@ -253,7 +253,7 @@ p {
     transform: translateX(36.66%) translateY(-50%);
   }
   100% {
-    transform: translateX(20%) translateY(-15%);
+    transform: translateX(120%) translateY(-15%);
   }
 }
 
