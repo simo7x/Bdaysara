@@ -233,45 +233,56 @@ p {
 }
 
 /* ============================================== Couple animation */
-@keyframes coupleAnimation {
-0% {
-    transform: translateX(100%) translateY(200%); /* Start from 200% bottom right */
+@keyframes coupleAnimation1 {
+  0%, 100% {
+    transform: translateY(-50%);
+  }
+  25% {
+    transform: translateX(0) translateY(-50%);
   }
   50% {
-    transform: translateX(50%) translateY(-50%); /* Move up to the middle */
+    transform: translateX(50%) translateY(-50%);
   }
-  100% {
-    transform: translateX(0) translateY(-50%); /* Stay in the middle without going down */
+  75% {
+    transform: translateX(100%) translateY(-50%);
   }
-}
-.person {
-  width: 386px;
-  height: 646px;
-  position: absolute;
-  bottom: -100%;
-  left: 0%;
-  margin-left: -193px; /* Half of the width */
-  animation: coupleAnimation 10s infinite alternate; /* Adjust duration and other properties as needed */
-  animation-delay: 10s; /* Delay the animation start for both persons by 10 seconds */
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 10px;
-  background-image: url('https://github.com/simo7x/Bdaysara/blob/main/simosd-removebg-preview.png'); /* Adjust the hosted image URL */
 }
 
-/* Add a second person for the couple */
+@keyframes coupleAnimation2 {
+  0%, 100% {
+    transform: translateY(-50%);
+  }
+  25% {
+    transform: translateX(0) translateY(-50%);
+  }
+  50% {
+    transform: translateX(-50%) translateY(-50%); /* Adjust to move towards the left */
+  }
+  75% {
+    transform: translateX(-100%) translateY(-50%); /* Adjust to move towards the left */
+  }
+}
+
+.person1,
 .person2 {
   width: 386px;
   height: 646px;
   position: absolute;
   bottom: 0;
-  left: 20%; /* Adjust the starting position */
+  left: 20%; /* Adjust the starting position for the first person */
+  right: 20%; /* Adjust the starting position for the second person */
   margin-left: -193px; /* Half of the width */
-  animation: coupleAnimation 4s infinite alternate; /* Adjust duration and other properties as needed */
+  animation: coupleAnimation1 4s infinite alternate, coupleAnimation2 4s infinite alternate; /* Adjust duration and other properties as needed */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 10px;
-  background-image: url('https://github.com/simo7x/Bdaysara/raw/main/simosd-removebg-preview.png'); /* Adjust the hosted image URL */
+}
+
+.person1 {
+  background-image: url('https://github.com/simo7x/Bdaysara/raw/main/simosd-removebg-preview.png'); /* Adjust the hosted image URL for the first person */
+}
+
+.person2 {
+  background-image: url('https://github.com/simo7x/Bdaysara/raw/main/simosd-removebg-preview.png'); /* Add the URL of your second person's image */
 }
