@@ -274,9 +274,9 @@ p {
   height: 323px;
   position: absolute;
   top: 0;
-  right: -75%;
+  right: -45%;
   margin-left: -193px;
-  animation: coupleAnimation1 4s infinite alternate, coupleAnimation2 4s infinite alternate;
+  animation: coupleAnimation1 6s infinite alternate, coupleAnimation2 4s infinite alternate;
   margin-left: -193px;
   background-size: cover;
   background-repeat: no-repeat;
