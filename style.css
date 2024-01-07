@@ -235,13 +235,19 @@ p {
 /* ============================================== Couple animation */
 @keyframes coupleAnimation1 {
   0% {
-    transform: translateX(70%) translateY(200%);
+    transform: translateX(100%) translateY(200%);
+  }
+  25% {
+    transform: translateX(75%) translateY(-50%);
   }
   50% {
-    transform: translateX(50%) translateY(-50%);
+    transform: translateX(50%) translateY(0);
+  }
+  75% {
+    transform: translateX(25%) translateY(-50%);
   }
   100% {
-    transform: translateX(-25%) translateY(-35%);
+    transform: translateX(0) translateY(-200%);
   }
 }
 
