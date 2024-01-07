@@ -235,7 +235,7 @@ p {
 /* ============================================== Couple animation */
 @keyframes coupleAnimation1 {
   0% {
-    transform: translateX(100%) translateY(200%);
+    transform: translateX(70%) translateY(200%);
   }
   16.66% {
     transform: translateX(83.33%) translateY(-50%);
