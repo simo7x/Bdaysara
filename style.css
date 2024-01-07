@@ -301,7 +301,7 @@ p {
   height: 323px;
   position: absolute;
   top: -10%;
-  left: -15%;
+  left: 15%;
   margin-left: -193px;
   animation: coupleAnimation1 4s infinite alternate, coupleAnimation2 4s infinite alternate;
   margin-left: -193px;
