@@ -236,13 +236,13 @@ p {
 
 @keyframes coupleAnimation {
   0% {
-    transform: translateY(0);
+    transform: translateX(0) translateY(100%); /* Start from the bottom */
   }
   50% {
-    transform: translateY(-20px); /* Adjust the vertical movement */
+    transform: translateX(50%) translateY(-50%); /* Move to the middle */
   }
   100% {
-    transform: translateY(0);
+    transform: translateX(100%) translateY(100%); /* End back at the bottom */
   }
 }
 
