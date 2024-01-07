@@ -236,13 +236,13 @@ p {
 
 @keyframes coupleAnimation {
   0% {
-    transform: translateX(0) translateY(300%); /* Start from the bottom */
+    transform: translateX(100%) translateY(100%); /* Start from the bottom right */
   }
   50% {
-    transform: translateX(50%) translateY(-25%); /* Move to the middle */
+    transform: translateX(50%) translateY(-50%); /* Move up to the middle */
   }
   100% {
-    transform: translateX(0%) translateY(0); /* End back at the bottom */
+    transform: translateX(0) translateY(100%); /* End before touching the candle */
   }
 }
 
