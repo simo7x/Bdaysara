@@ -236,16 +236,15 @@ p {
 
 @keyframes coupleAnimation {
   0% {
-    transform: translateX(100%) translateY(100%); /* Start from the bottom right */
+    transform: translateX(100%) translateY(200%); /* Start from 200% bottom right */
   }
   50% {
     transform: translateX(50%) translateY(-50%); /* Move up to the middle */
   }
   100% {
-    transform: translateX(0) translateY(100%); /* End before touching the candle */
+    transform: translateX(0) translateY(200%); /* End before touching the candle */
   }
 }
-
 .person {
   width: 386px;
   height: 646px;
