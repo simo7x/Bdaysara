@@ -236,7 +236,7 @@ p {
 
 @keyframes coupleAnimation {
   0% {
-    transform: translateX(0) translateY(100%); /* Start from the bottom */
+    transform: translateX(0) translateY(300%); /* Start from the bottom */
   }
   50% {
     transform: translateX(50%) translateY(-25%); /* Move to the middle */
