@@ -244,10 +244,10 @@ p {
     transform: translateX(50%) translateY(0);
   }
   75% {
-    transform: translateX(25%) translateY(-50%);
+    transform: translateX(0%) translateY(-50%);
   }
   100% {
-    transform: translateX(0) translateY(-200%);
+    transform: translateX(0) translateY(-20%);
   }
 }
 
