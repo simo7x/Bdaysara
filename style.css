@@ -271,7 +271,6 @@ p {
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 10px;
-  animation: fadeIn 0.5s forwards;
 }
 
 
@@ -280,6 +279,6 @@ p {
   background-image: url('https://github.com/simo7x/Bdaysara/raw/main/simosd-removebg-preview.png'); /* Adjust the hosted image URL for the first person */
 }
 
-.person2 {
+/*.person2 {
   background-image: url('https://github.com/simo7x/Bdaysara/raw/main/simosd-removebg-preview.png'); /* Add the URL of your second person's image */
-}
+}*/
