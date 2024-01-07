@@ -241,7 +241,7 @@ p {
     transform: translateX(50%) translateY(-50%);
   }
   100% {
-    transform: translateX(0) translateY(-35%);
+    transform: translateX(-25%) translateY(-35%);
   }
 }
 
