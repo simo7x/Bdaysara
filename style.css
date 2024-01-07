@@ -253,7 +253,7 @@ p {
     transform: translateX(36.66%) translateY(-50%);
   }
   100% {
-    transform: translateX(20%) translateY(-200%);
+    transform: translateX(20%) translateY(-15%);
   }
 }
 
@@ -274,7 +274,7 @@ p {
   height: 323px;
   position: absolute;
   top: 0;
-  right: -75%;
+  right: -55%;
   margin-left: -193px;
   animation: coupleAnimation1 4s infinite alternate, coupleAnimation2 4s infinite alternate;
   margin-left: -193px;
