@@ -259,15 +259,28 @@ p {
 
 @keyframes coupleAnimation2 {
   0% {
-    transform: translateX(0%) translateY(100%);
+    transform: translateX(120%) translateY(200%);
+  }
+  16.66% {
+    transform: translateX(103.33%) translateY(-30%);
+  }
+  33.33% {
+    transform: translateX(86.66%) translateY(0);
   }
   50% {
-    transform: translateX(0) translateY(0);
+    transform: translateX(70%) translateY(-30%);
+  }
+  66.66% {
+    transform: translateX(53.33%) translateY(0);
+  }
+  83.33% {
+    transform: translateX(36.66%) translateY(-30%);
   }
   100% {
-    transform: translateX(0) translateY(25%);
+    transform: translateX(30%) translateY(-15%);
   }
 }
+
 
 .person1 {
   width: 193px;
@@ -287,7 +300,7 @@ p {
   width: 193px;
   height: 323px;
   position: absolute;
-  top: 0;
+  top: -10;
   left: -25%;
   margin-left: -193px;
   animation: coupleAnimation1 4s infinite alternate, coupleAnimation2 4s infinite alternate;
@@ -304,6 +317,6 @@ p {
   background-image: url('https://github.com/simo7x/Bdaysara/raw/main/simosd-removebg-preview.png'); /* Adjust the hosted image URL for the first person */
 }
 
-/*.person2 {
-  background-image: url('https://github.com/simo7x/Bdaysara/raw/main/simosd-removebg-preview.png'); /* Add the URL of your second person's image */
-}*/
+.person2 {
+  background-image: url('https://github.com/simo7x/Bdaysara/blob/main/Sarasd-removebg-preview.png'); /* Add the URL of your second person's image */
+}
