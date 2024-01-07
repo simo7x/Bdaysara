@@ -239,10 +239,10 @@ p {
     transform: translateX(0) translateY(100%); /* Start from the bottom */
   }
   50% {
-    transform: translateX(50%) translateY(-50%); /* Move to the middle */
+    transform: translateX(0%) translateY(-50%); /* Move to the middle */
   }
   100% {
-    transform: translateX(100%) translateY(100%); /* End back at the bottom */
+    transform: translateX(100%) translateY(0); /* End back at the bottom */
   }
 }
 
