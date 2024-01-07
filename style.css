@@ -242,7 +242,7 @@ p {
     transform: translateX(50%) translateY(-50%); /* Move up to the middle */
   }
   100% {
-    transform: translateX(0) translateY(200%); /* End before touching the candle */
+    transform: translateX(0) translateY(25%); /* Go down to 25% from the top */
   }
 }
 .person {
