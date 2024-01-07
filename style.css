@@ -250,7 +250,7 @@ p {
   height: 646px;
   position: absolute;
   bottom: 0;
-  left: 50%;
+  left: 100%;
   margin-left: -193px; /* Half of the width */
   animation: coupleAnimation 5s infinite alternate; /* Adjust duration and other properties as needed */
   background-size: cover;
