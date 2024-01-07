@@ -251,7 +251,8 @@ p {
   bottom: -100%;
   left: 0%;
   margin-left: -193px; /* Half of the width */
-  animation: coupleAnimation 5s infinite alternate; /* Adjust duration and other properties as needed */
+  animation: coupleAnimation 10s infinite alternate; /* Adjust duration and other properties as needed */
+  animation-delay: 10s; /* Delay the animation start for both persons by 10 seconds */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
