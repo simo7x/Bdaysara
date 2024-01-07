@@ -233,7 +233,7 @@ p {
 }
 
 /* ============================================== Couple animation */
-
+@keyframes coupleAnimation {
 0% {
     transform: translateX(100%) translateY(200%); /* Start from 200% bottom right */
   }
@@ -248,7 +248,7 @@ p {
   width: 386px;
   height: 646px;
   position: absolute;
-  bottom: 0;
+  bottom: -100%;
   left: 0%;
   margin-left: -193px; /* Half of the width */
   animation: coupleAnimation 5s infinite alternate; /* Adjust duration and other properties as needed */
