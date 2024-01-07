@@ -266,7 +266,8 @@ p {
   left: 50%;
   margin-left: -193px;
   animation: coupleAnimation1 4s infinite alternate, coupleAnimation2 4s infinite alternate;
-  animation-delay: 10s;
+  animation-delay: 100s;
+  opacity: 0;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
