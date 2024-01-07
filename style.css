@@ -268,17 +268,16 @@ p {
   width: 386px;
   height: 646px;
   position: absolute;
-  bottom: 0;
-  left: 20%; /* Adjust the starting position for the first person */
-  right: 20%; /* Adjust the starting position for the second person */
+  top: 0; /* Adjusted to stay at the top */
+  left: 50%; /* Centered horizontally */
   margin-left: -193px; /* Half of the width */
   animation: coupleAnimation1 4s infinite alternate, coupleAnimation2 4s infinite alternate; /* Adjust duration and other properties as needed */
+  animation-delay: 10s; /* Delay the animation start for both persons by 10 seconds */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 10px;
 }
-
 .person1 {
   background-image: url('https://github.com/simo7x/Bdaysara/raw/main/simosd-removebg-preview.png'); /* Adjust the hosted image URL for the first person */
 }
