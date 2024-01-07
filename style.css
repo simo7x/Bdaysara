@@ -234,15 +234,14 @@ p {
 
 /* ============================================== Couple animation */
 
-@keyframes coupleAnimation {
-  0% {
+0% {
     transform: translateX(100%) translateY(200%); /* Start from 200% bottom right */
   }
   50% {
-    transform: translateX(50%) translateY(50%); /* Move up to the middle */
+    transform: translateX(50%) translateY(-50%); /* Move up to the middle */
   }
   100% {
-    transform: translateX(0) translateY(25%); /* Go down to 25% from the top */
+    transform: translateX(0) translateY(-50%); /* Stay in the middle without going down */
   }
 }
 .person {
@@ -250,7 +249,7 @@ p {
   height: 646px;
   position: absolute;
   bottom: 0;
-  left: 100%;
+  left: 0%;
   margin-left: -193px; /* Half of the width */
   animation: coupleAnimation 5s infinite alternate; /* Adjust duration and other properties as needed */
   background-size: cover;
