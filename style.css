@@ -235,25 +235,25 @@ p {
 /* ============================================== Couple animation */
 @keyframes coupleAnimation1 {
   0% {
-    transform: translateX(120%) translateY(200%);
+    transform: translateX(120%) translateY(180%);
   }
   16.66% {
-    transform: translateX(103.33%) translateY(-50%);
+    transform: translateX(103.33%) translateY(-30%);
   }
   33.33% {
-    transform: translateX(86.66%) translateY(0);
+    transform: translateX(86.66%) translateY(-20%);
   }
   50% {
-    transform: translateX(70%) translateY(-50%);
+    transform: translateX(70%) translateY(-30%);
   }
   66.66% {
-    transform: translateX(53.33%) translateY(0);
+    transform: translateX(53.33%) translateY(-20%);
   }
   83.33% {
-    transform: translateX(36.66%) translateY(-50%);
+    transform: translateX(36.66%) translateY(-30%);
   }
   100% {
-    transform: translateX(30%) translateY(-15%);
+    transform: translateX(30%) translateY(-5%);
   }
 }
 
