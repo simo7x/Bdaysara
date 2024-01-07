@@ -257,7 +257,20 @@ p {
   }
 }
 
-.person1,
+.person1 {
+  width: 193px;
+  height: 323px;
+  position: absolute;
+  top: 0;
+  right: -25%;
+  margin-left: -193px;
+  animation: coupleAnimation1 4s infinite alternate, coupleAnimation2 4s infinite alternate;
+  margin-left: -193px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 10px;
+}
 .person2 {
   width: 193px;
   height: 323px;
