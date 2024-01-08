@@ -280,7 +280,17 @@ p {
     transform: translateX(-30%) translateY(-15%);
   }
 }
-
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 .person1 {
   width: 193px;
@@ -289,7 +299,7 @@ p {
   top: -45%;
   right: 15%;
   margin-left: -193px;
-  animation: coupleAnimation1 4s infinite alternate;
+  animation: fadeIn 2s ease-in-out 10s forwards;
   margin-left: -193px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -303,7 +313,7 @@ p {
   top: -45%;
   left: 75%;
   margin-left: -193px;
-  animation: coupleAnimation2 4s infinite alternate;
+  animation: fadeIn 2s ease-in-out 10s forwards;;
   margin-left: -193px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -320,3 +330,4 @@ p {
 .person2 {
   background-image: url('https://github.com/simo7x/Bdaysara/raw/main/Sarasd-removebg-preview.png'); /* Add the URL of your second person's image */
 }
+
