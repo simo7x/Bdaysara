@@ -246,18 +246,33 @@ p {
   line-height: 2em;
   position: absolute;
   top: 200%; /* Adjust the top position */
-
- /* Add more glowing effect and brightness */
-  text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #e3d7f7, 0 0 40px #e3d7f7, 0 0 50px #e3d7f7, 0 0 60px #ffffff, 0 0 70px #ffffff, 0 0 80px #ffffff;
-  animation: glow 1s ease-in-out infinite alternate, brightness 2s ease-in-out infinite alternate;
+   animation: fadeInAndGlow 5s forwards, brightness 2s ease-in-out, darkening 1s ease-in-out 6s forwards; /* Apply the fadeInAndGlow animation */
+  transform-origin: center; /* Set the scaling origin to the center */
 }
-
+ /* Define the glowing animation */
 @keyframes glow {
   from {
-    text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #e3d7f7, 0 0 40px #e3d7f7, 0 0 50px #e3d7f7, 0 0 60px #ffffff, 0 0 70px #ffffff, 0 0 80px #ffffff;
+    text-shadow: 0 0 10px #6666ff, 0 0 20px #6666ff, 0 0 30px #6666ff, 0 0 40px #6666ff, 0 0 50px #6666ff, 0 0 60px #6666ff, 0 0 70px #6666ff;
   }
   to {
-    text-shadow: 0 0 20px #ffffff, 0 0 30px #e3d7f7, 0 0 40px #e3d7f7, 0 0 50px #e3d7f7, 0 0 60px #e3d7f7, 0 0 70px #ffffff, 0 0 80px #ffffff, 0 0 90px #ffffff;
+    text-shadow: 0 0 20px #6666ff, 0 0 30px #ffccff, 0 0 40px #ffccff, 0 0 50px #ffccff, 0 0 60px #ffccff, 0 0 70px #ffccff, 0 0 80px #ffccff;
+  }
+}
+
+/* Define the fadeInAndGlow animation */
+@keyframes fadeInAndGlow {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    text-shadow: 0 0 20px #6666ff, 0 0 30px #ffccff, 0 0 40px #ffccff, 0 0 50px #ffccff, 0 0 60px #ffccff, 0 0 70px #ffccff, 0 0 80px #ffccff;
   }
 }
 
@@ -269,15 +284,9 @@ p {
     filter: brightness(1.5); /* Adjust brightness level as needed */
   }
 }
-@keyframes scale {
-  0% {
-    transform: scale(0.5);
-  }
-  50% {
-    transform: scale(1.2); /* Scale to 120% halfway through the animation */
-  }
-  100% {
-    transform: scale(1);
+@keyframes darkening {
+  to {
+    filter: brightness(0);
   }
 }
 /* ============================================== Couple animation */
