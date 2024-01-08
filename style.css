@@ -313,7 +313,7 @@ p {
   top: -45%;
   left: 75%;
   margin-left: -193px;
-  animation: coupleAnimation2 4s infinite alternate, fadeIn 10s ease-in-out 10s forwards;
+  animation: coupleAnimation2 4s infinite alternate, fadeIn 10s ease-in-out 0s forwards;
   margin-left: -193px;
   background-size: cover;
   background-repeat: no-repeat;
