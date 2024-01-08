@@ -241,23 +241,23 @@ p {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  color: #c0d9ff; /* Neon white text color with more blue */
+  color: #e3d7f7; /* More lilac with a touch of white */
   font-size: 1em;
   line-height: 2em;
   position: absolute;
   top: 200%; /* Adjust the top position */
 
- /* Add glowing effect with more blue on the edges */
-  text-shadow: 0 0 10px #007acc, 0 0 20px #007acc, 0 0 30px #c0d9ff, 0 0 40px #c0d9ff, 0 0 50px #c0d9ff, 0 0 60px #007acc, 0 0 70px #007acc;
+  /* Add glowing effect with more white on the edges */
+  text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #e3d7f7, 0 0 40px #e3d7f7, 0 0 50px #e3d7f7, 0 0 60px #ffffff, 0 0 70px #ffffff;
   animation: glow 1s ease-in-out infinite alternate;
 }
 
 @keyframes glow {
   from {
-    text-shadow: 0 0 10px #007acc, 0 0 20px #007acc, 0 0 30px #c0d9ff, 0 0 40px #c0d9ff, 0 0 50px #c0d9ff, 0 0 60px #007acc, 0 0 70px #007acc;
+    text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #e3d7f7, 0 0 40px #e3d7f7, 0 0 50px #e3d7f7, 0 0 60px #ffffff, 0 0 70px #ffffff;
   }
   to {
-    text-shadow: 0 0 20px #007acc, 0 0 30px #c0d9ff, 0 0 40px #c0d9ff, 0 0 50px #c0d9ff, 0 0 60px #c0d9ff, 0 0 70px #007acc, 0 0 80px #007acc;
+    text-shadow: 0 0 20px #ffffff, 0 0 30px #e3d7f7, 0 0 40px #e3d7f7, 0 0 50px #e3d7f7, 0 0 60px #e3d7f7, 0 0 70px #ffffff, 0 0 80px #ffffff;
   }
 }
 
