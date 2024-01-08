@@ -246,23 +246,18 @@ p {
   line-height: 2em;
   position: absolute;
   top: 200%; /* Adjust the top position */
-}
 
-.custom-text.glow {
-  font-size: 80px;
-  color: #5271ff; /* Neon blue color */
-  text-align: center;
-  -webkit-animation: glow 1s ease-in-out infinite alternate;
-  -moz-animation: glow 1s ease-in-out infinite alternate;
+  /* Add glowing effect */
+  text-shadow: 0 0 10px #000, 0 0 20px #000, 0 0 30px #5271ff, 0 0 40px #5271ff, 0 0 50px #5271ff, 0 0 60px #5271ff, 0 0 70px #5271ff;
   animation: glow 1s ease-in-out infinite alternate;
 }
 
-@-webkit-keyframes glow {
+@keyframes glow {
   from {
-    text-shadow: 0 0 10px #5271ff, 0 0 20px #5271ff, 0 0 30px #5271ff, 0 0 40px #5271ff, 0 0 50px #5271ff, 0 0 60px #5271ff, 0 0 70px #5271ff;
+    text-shadow: 0 0 10px #000, 0 0 20px #000, 0 0 30px #00ccff, 0 0 40px #00ccff, 0 0 50px #00ccff, 0 0 60px #00ccff, 0 0 70px #00ccff;
   }
   to {
-    text-shadow: 0 0 20px #5271ff, 0 0 30px #5271ff, 0 0 40px #5271ff, 0 0 50px #5271ff, 0 0 60px #5271ff, 0 0 70px #5271ff, 0 0 80px #5271ff;
+    text-shadow: 0 0 20px #000, 0 0 30px #00ccff, 0 0 40px #00ccff, 0 0 50px #00ccff, 0 0 60px #00ccff, 0 0 70px #00ccff, 0 0 80px #00ccff;
   }
 }
 
