@@ -269,12 +269,12 @@ p {
     filter: brightness(1.5); /* Adjust brightness level as needed */
   }
 }
-@keyframes zoomOut {
+@keyframes zoomIn {
   to {
-    transform: scale(0.8); /* Adjust the scale factor */
+    top: 200%; /* Adjust the final top position */
+    transform: scale(1); /* Zoom in to the original size */
   }
 }
-
 /* ============================================== Couple animation */
 @keyframes coupleAnimation1 {
   0% {
