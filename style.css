@@ -247,20 +247,19 @@ p {
   position: absolute;
   top: 200%; /* Adjust the top position */
 
-  /* Add glowing effect */
-  text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #d9c8ff, 0 0 40px #d9c8ff, 0 0 50px #d9c8ff, 0 0 60px #d9c8ff, 0 0 70px #d9c8ff;
+ /* Add glowing effect with more blue on the edges */
+  text-shadow: 0 0 10px #3a3aeb, 0 0 20px #3a3aeb, 0 0 30px #d9c8ff, 0 0 40px #d9c8ff, 0 0 50px #d9c8ff, 0 0 60px #3a3aeb, 0 0 70px #3a3aeb;
   animation: glow 1s ease-in-out infinite alternate;
 }
 
 @keyframes glow {
   from {
-    text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #d9c8ff, 0 0 40px #d9c8ff, 0 0 50px #d9c8ff, 0 0 60px #d9c8ff, 0 0 70px #d9c8ff;
+    text-shadow: 0 0 10px #3a3aeb, 0 0 20px #3a3aeb, 0 0 30px #d9c8ff, 0 0 40px #d9c8ff, 0 0 50px #d9c8ff, 0 0 60px #3a3aeb, 0 0 70px #3a3aeb;
   }
   to {
-    text-shadow: 0 0 20px #ffffff, 0 0 30px #d9c8ff, 0 0 40px #d9c8ff, 0 0 50px #d9c8ff, 0 0 60px #d9c8ff, 0 0 70px #d9c8ff, 0 0 80px #d9c8ff;
+    text-shadow: 0 0 20px #3a3aeb, 0 0 30px #d9c8ff, 0 0 40px #d9c8ff, 0 0 50px #d9c8ff, 0 0 60px #d9c8ff, 0 0 70px #3a3aeb, 0 0 80px #3a3aeb;
   }
 }
-
 
 /* ============================================== Couple animation */
 @keyframes coupleAnimation1 {
