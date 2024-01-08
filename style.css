@@ -289,7 +289,7 @@ p {
   top: -10%;
   right: -15%;
   margin-left: -193px;
-  animation: coupleAnimation1 4s infinite alternate, coupleAnimation2 4s infinite alternate;
+  animation: coupleAnimation1 4s infinite alternate;
   margin-left: -193px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -303,7 +303,7 @@ p {
   top: -10%;
   left: -15%;
   margin-left: -193px;
-  animation: coupleAnimation1 4s infinite alternate, coupleAnimation2 4s infinite alternate;
+  animation: coupleAnimation2 4s infinite alternate;
   margin-left: -193px;
   background-size: cover;
   background-repeat: no-repeat;
