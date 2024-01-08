@@ -272,7 +272,7 @@ p {
 @keyframes zoomIn {
   to {
     top: 200%; /* Adjust the final top position */
-    transform: scale(1); /* Zoom in to the original size */
+    transform: scale(2); /* Zoom in to the original size */
   }
 }
 /* ============================================== Couple animation */
