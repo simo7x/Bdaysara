@@ -241,21 +241,22 @@ p {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  color: #ff66b2; /* Rosy text color */
+  color: #00ccff; /* Neon blue text color */
   font-size: 1em;
   line-height: 2em;
   position: absolute;
   top: 200%; /* Adjust the top position */
-   text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+/* Add glowing effect */
+  text-shadow: 0 0 10px #000, 0 0 20px #000, 0 0 30px #00ccff, 0 0 40px #00ccff, 0 0 50px #00ccff, 0 0 60px #00ccff, 0 0 70px #00ccff;
   animation: glow 1s ease-in-out infinite alternate;
 }
 
 @keyframes glow {
   from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    text-shadow: 0 0 10px #000, 0 0 20px #000, 0 0 30px #00ccff, 0 0 40px #00ccff, 0 0 50px #00ccff, 0 0 60px #00ccff, 0 0 70px #00ccff;
   }
   to {
-    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    text-shadow: 0 0 20px #000, 0 0 30px #00ccff, 0 0 40px #00ccff, 0 0 50px #00ccff, 0 0 60px #00ccff, 0 0 70px #00ccff, 0 0 80px #00ccff;
   }
 }
 
