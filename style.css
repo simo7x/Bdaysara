@@ -271,10 +271,13 @@ p {
 }
 @keyframes scale {
   0% {
-    transform: scale(0.5); /* Start with a small scale */
+    transform: scale(0.5);
+  }
+  50% {
+    transform: scale(1.2); /* Scale to 120% halfway through the animation */
   }
   100% {
-    transform: scale(1); /* Reach the desired scale */
+    transform: scale(1);
   }
 }
 /* ============================================== Couple animation */
