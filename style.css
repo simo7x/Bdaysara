@@ -269,6 +269,11 @@ p {
     filter: brightness(1.5); /* Adjust brightness level as needed */
   }
 }
+@keyframes darkening {
+  to {
+    filter: brightness(0);
+  }
+}
 /* ============================================== Couple animation */
 @keyframes coupleAnimation1 {
   0% {
