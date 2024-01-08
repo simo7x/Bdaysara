@@ -245,7 +245,7 @@ p {
   font-size: 1em;
   line-height: 2em;
   position: absolute;
-  top: -40%; /* Adjust the top position */
+  top: 200%; /* Adjust the top position */
 }
 
 /* ============================================== Couple animation */
