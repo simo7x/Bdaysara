@@ -269,9 +269,15 @@ p {
     opacity: 0;
     transform: scale(1);
   }
-  100% {
+  
+75% {
     opacity: 1;
     transform: scale(1.2);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1.5);
     text-shadow: 0 0 20px #6666ff, 0 0 30px #ffccff, 0 0 40px #ffccff, 0 0 50px #ffccff, 0 0 60px #ffccff, 0 0 70px #ffccff, 0 0 80px #ffccff;
   }
 }
