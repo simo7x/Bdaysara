@@ -246,7 +246,7 @@ p {
   line-height: 2em;
   position: absolute;
   top: 200%; /* Adjust the top position */
-   animation: fadeInAndGlow 10s forwards, brightness 17s ease-in-out, darkening 18s ease-in-out 6s forwards infinite; /* Apply the fadeInAndGlow animation */
+   animation: fadeInAndGlow 14s forwards, brightness 17s ease-in-out, darkening 18s ease-in-out 6s forwards infinite; /* Apply the fadeInAndGlow animation */
   transform-origin: center; /* Set the scaling origin to the center */
 }
  /* Define the glowing animation */
