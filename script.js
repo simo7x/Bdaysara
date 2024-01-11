@@ -1,5 +1,4 @@
 // CREDIT FOR MICROPHONE CODE
-// Travis Holliday
 // https://codepen.io/travisholliday/pen/gyaJk
 var navigator = window.navigator;
 navigator.getUserMedia_ = navigator.getUserMedia ||
