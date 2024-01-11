@@ -74,3 +74,41 @@ if (navigator.getUserMedia_) {
 } else {
   console.log("getUserMedia not supported");
 }
+document.addEventListener('DOMContentLoaded', function () {
+  const counterElement = document.querySelector('.counter');
+  const targetValue = 27;
+  const duration = 2000; // in milliseconds
+  const frameDuration = 1000 / 60; // assuming 60 frames per second
+
+  const totalFrames = duration / frameDuration;
+  const valueIncrement = targetValue / totalFrames;
+
+  let currentFrame = 0;
+
+  function animateCounter() {
+    if (currentFrame <= totalFrames) {
+      const animatedValue = Math.floor(currentFrame * valueIncrement);
+      const digitString = animatedValue.toString().padStart(2, '0');
+      updateCounterDigits(digitString);
+      currentFrame++;
+      requestAnimationFrame(animateCounter);
+    } else {
+      const targetString = targetValue.toString().padStart(2, '0');
+      updateCounterDigits(targetString);
+    }
+  }
+
+  function updateCounterDigits(value) {
+    const digitElements = counterElement.querySelectorAll('.digit-flipper__digit');
+    for (let i = 0; i < digitElements.length; i++) {
+      const digit = parseInt(value[i], 10);
+      const digitFlipper = digitElements[i].closest('.digit-flipper');
+      digitFlipper.classList.remove('digit-flipper__digit--flip-top', 'digit-flipper__digit--flip-bottom', 'digit-flipper__digit--flip-done');
+      digitFlipper.style.zIndex = '';
+      digitFlipper.querySelector('.digit-flipper__digit-top').textContent = digit;
+      digitFlipper.querySelector('.digit-flipper__digit-bottom').textContent = digit;
+    }
+  }
+
+  animateCounter();
+});
