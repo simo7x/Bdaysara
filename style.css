@@ -411,11 +411,11 @@ p {
 .counter-digit .digit-flipper {
   display: inline-block;
   height: 0.98em;
-  font-size: 2em; /* Adjust font size as needed */
+  font-size: 4em; /* Adjust font size as needed */
   line-height: 1;
   margin: 0 0.02em;
-  -webkit-perspective: 300px;
-  perspective: 300px;
+  -webkit-perspective: 600px;
+  perspective: 600px;
   position: relative;
   width: 0.65em;
 }
