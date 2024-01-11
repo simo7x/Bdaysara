@@ -395,7 +395,7 @@ p {
   display: flex;
   align-items: center; /* Center vertically */
   justify-content: center; /* Center horizontally */
-  font-size: 3em;
+  font-size: 2em;
   color: #333;
   font-weight: bold;
   perspective: 1000px;
