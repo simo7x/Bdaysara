@@ -416,7 +416,7 @@ body {
 }
 
 .flip:nth-child(1) {
-  transform: rotateX(0deg);
+  transform: rotateX(180deg);
 }
 
 .flip:nth-child(2) {
