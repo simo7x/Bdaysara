@@ -395,7 +395,7 @@ p {
   display: flex;
   align-items: center; /* Center vertically */
   justify-content: center; /* Center horizontally */
-  font-size: 4em;
+  font-size: 2em;
   color: #333;
   font-weight: bold;
   perspective: 1000px;
@@ -411,7 +411,7 @@ p {
 .counter-digit .digit-flipper {
   display: inline-block;
   height: 0.98em;
-  font-size: 3em; /* Adjust font size as needed */
+  font-size: 2em; /* Adjust font size as needed */
   line-height: 1;
   margin: 0 0.02em;
   -webkit-perspective: 300px;
