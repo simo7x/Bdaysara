@@ -1,30 +1,3 @@
-document.addEventListener('DOMContentLoaded', function() {
-  const counterElement1 = document.getElementById('flip1');
-  const counterElement2 = document.getElementById('flip2');
-  const targetValue = 27;
-  const duration = 2000; // in milliseconds
-  const frameDuration = 1000 / 60; // assuming 60 frames per second
-
-  const totalFrames = duration / frameDuration;
-  const valueIncrement = targetValue / totalFrames;
-
-  let currentFrame = 0;
-
-  function animateCounter() {
-    if (currentFrame <= totalFrames) {
-      const animatedValue = Math.floor(currentFrame * valueIncrement);
-      counterElement1.textContent = animatedValue % 10;
-      counterElement2.textContent = animatedValue % 10;
-      currentFrame++;
-      requestAnimationFrame(animateCounter);
-    } else {
-      counterElement1.textContent = targetValue % 10;
-      counterElement2.textContent = targetValue % 10;
-    }
-  }
-
-  animateCounter();
-
 // CREDIT FOR MICROPHONE CODE
 // Travis Holliday
 // https://codepen.io/travisholliday/pen/gyaJk
