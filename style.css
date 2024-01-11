@@ -266,7 +266,7 @@ p {
     transform: scale(0.5);
   }
   50% {
-    opacity: 0;
+    opacity: 1;
     transform: scale(1);
   }
   
