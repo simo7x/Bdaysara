@@ -393,7 +393,8 @@ p {
 /* Add digit-flipper styles here */
 .counter {
   display: flex;
-  align-items: flex-end;
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
   font-size: 3em;
   color: #333;
   font-weight: bold;
