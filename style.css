@@ -416,10 +416,10 @@ body {
 }
 
 .flip:nth-child(1) {
-  transform: rotateX(180deg);
+  transform: rotateX(0deg);
 }
 
 .flip:nth-child(2) {
-  transform: rotateX(180deg);
+  transform: rotateX(0deg);
 }
 
