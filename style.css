@@ -390,29 +390,127 @@ p {
 }
 
 /* ============================================== Counter animation */
-body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
-}
-
-.counter {
-  display: flex;
-  align-items: flex-end;
-  font-size: 3em;
-  color: #333;
-  font-weight: bold;
-  perspective: 1000px;
-}
-
-.flip {
-  transform-style: preserve-3d;
-  transform-origin: bottom center;
-  transition: transform 0.5s ease-in-out;
+/* Add digit-flipper styles here */
+    .counter {
+      display: flex;
+      align-items: flex-end;
+      font-size: 3em;
+      color: #333;
+      font-weight: bold;
+      perspective: 1000px;
+    }
+    
+    .digit-flipper {
+      display: inline-block;
+      height: 0.98em;
+      font-size: 3em; /* Adjust font size as needed */
+      line-height: 1;
+      margin: 0 0.02em;
+      -webkit-perspective: 300px;
+      perspective: 300px;
+      position: relative;
+      width: 0.65em;
+    }
+    
+    .digit-flipper__digit {
+      display: block;
+      height: 100%;
+      position: absolute;
+      text-align: center;
+      width: 100%;
+    }
+    
+    .digit-flipper__digit-top,
+    .digit-flipper__digit-bottom {
+      color: black;
+      display: block;
+      height: 100%;
+      position: absolute;
+      -webkit-transform-origin: 50% 50%;
+      transform-origin: 50% 50%;
+      width: 100%;
+    }
+    
+    .digit-flipper__digit-top {
+      background-color: #ffffff;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      -webkit-clip-path: inset(0 0 51% 0);
+      clip-path: inset(0 0 51% 0);
+      overflow: hidden;
+      -webkit-transform: rotateX(0deg);
+      transform: rotateX(0deg);
+    }
+    
+    .digit-flipper__digit-bottom {
+      background-color: #d9d9d9;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      -webkit-clip-path: inset(51% 0 0 0);
+      clip-path: inset(51% 0 0 0);
+      -webkit-transform: rotateX(90deg);
+      transform: rotateX(90deg);
+    }
+    
+    .digit-flipper__digit--flip-bottom .digit-flipper__digit-bottom {
+      -webkit-animation: flip-bottom 0.3s ease-in 0s 1 forwards;
+      animation: flip-bottom 0.3s ease-in 0s 1 forwards;
+    }
+    
+    .digit-flipper__digit--flip-top .digit-flipper__digit-top {
+      -webkit-animation: flip-top 0.3s ease-in 0s 1 forwards;
+      animation: flip-top 0.3s ease-in 0s 1 forwards;
+    }
+    
+    .digit-flipper__digit--flip-done .digit-flipper__digit-bottom {
+      -webkit-transform: rotateX(0deg);
+      transform: rotateX(0deg);
+    }
+    
+    @-webkit-keyframes flip-top {
+      from {
+        -webkit-transform: rotateX(0deg);
+        transform: rotateX(0deg);
+      }
+      to {
+        -webkit-transform: rotateX(-90deg);
+        transform: rotateX(-90deg);
+      }
+    }
+    
+    @keyframes flip-top {
+      from {
+        -webkit-transform: rotateX(0deg);
+        transform: rotateX(0deg);
+      }
+      to {
+        -webkit-transform: rotateX(-90deg);
+        transform: rotateX(-90deg);
+      }
+    }
+    
+    @-webkit-keyframes flip-bottom {
+      from {
+        -webkit-transform: rotateX(90deg);
+        transform: rotateX(90deg);
+      }
+      to {
+        -webkit-transform: rotateX(0deg);
+        transform: rotateX(0deg);
+      }
+    }
+    
+    @keyframes flip-bottom {
+      from {
+        -webkit-transform: rotateX(90deg);
+        transform: rotateX(90deg);
+      }
+      to {
+        -webkit-transform: rotateX(0deg);
+        transform: rotateX(0deg);
+      }
+    }
+ransition: transform 0.5s ease-in-out;
 }
 
 .flip:nth-child(1) {
