@@ -410,14 +410,14 @@ p {
 
 .counter-digit .digit-flipper {
   display: inline-block;
-  height: 0.98em;
-  font-size: 4em; /* Adjust font size as needed */
+ height: 1.5em; /* Adjust height as needed */
+  font-size: 3em;
   line-height: 1;
   margin: 0 0.02em;
   -webkit-perspective: 300px;
   perspective: 300px;
   position: relative;
-  width: 0.65em;
+  width: 1em; /* Adjust width as needed */
 }
 
 .counter-digit .digit-flipper__digit {
