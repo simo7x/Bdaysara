@@ -410,7 +410,7 @@ p {
 
 .counter-digit .digit-flipper {
   display: inline-block;
- height: 3em; /* Adjust height as needed */
+ height: 2em; /* Adjust height as needed */
   font-size: 3em;
   line-height: 1;
   margin: 0 0.02em;
