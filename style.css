@@ -255,7 +255,7 @@ p {
     text-shadow: 0 0 10px #6666ff, 0 0 20px #6666ff, 0 0 30px #6666ff, 0 0 40px #6666ff, 0 0 50px #6666ff, 0 0 60px #6666ff, 0 0 70px #6666ff;
   }
   to {
-    text-shadow: 0 0 20px #6666ff, 0 0 30px #ffccff, 0 0 40px #ffccff, 0 0 50px #ffccff, 0 0 60px #ffccff, 0 0 70px #ffccff, 0 0 80px #ffccff;
+    text-shadow: 0 0 20px #ff99cc, 0 0 30px #ff66b2, 0 0 40px #ff33a6, 0 0 50px #ff0099, 0 0 60px #e60073, 0 0 70px #cc0052, 0 0 80px #b3003a;
   }
 }
 
