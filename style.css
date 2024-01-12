@@ -441,7 +441,7 @@ p {
 }
 
 .digit-flipper__digit-top {
-  background-color: #ffcc99; /* Set the background color for the top half */
+  background-color: #ffccff; /* Set the background color for the top half */
   border-top-left-radius: 5px; /* Adjust border radius as needed */
   border-top-right-radius: 5px; /* Adjust border radius as needed */
   -webkit-clip-path: inset(0 0 51% 0);
