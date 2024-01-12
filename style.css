@@ -439,10 +439,10 @@ p {
   width: 100%;
 }
 
-.counter-digit .digit-flipper__digit-top {
-  background-color: #ffffff;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+.digit-flipper__digit-top {
+  background-color: #3498db; /* Set the background color for the top half */
+  border-top-left-radius: 5px; /* Adjust border radius as needed */
+  border-top-right-radius: 5px; /* Adjust border radius as needed */
   -webkit-clip-path: inset(0 0 51% 0);
   clip-path: inset(0 0 51% 0);
   overflow: hidden;
@@ -450,10 +450,10 @@ p {
   transform: rotateX(0deg);
 }
 
-.counter-digit .digit-flipper__digit-bottom {
-  background-color: #d9d9d9;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+.digit-flipper__digit-bottom {
+  background-color: #e74c3c; /* Set the background color for the bottom half */
+  border-bottom-left-radius: 5px; /* Adjust border radius as needed */
+  border-bottom-right-radius: 5px; /* Adjust border radius as needed */
   -webkit-clip-path: inset(51% 0 0 0);
   clip-path: inset(51% 0 0 0);
   -webkit-transform: rotateX(90deg);
