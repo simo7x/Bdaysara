@@ -397,6 +397,7 @@ p {
   justify-content: center; /* Center horizontally */
   font-size: 2em;
   color: #333;
+  font-family: Times New Roman, sans-serif; 
   font-weight: bold;
   perspective: 1000px;
 
