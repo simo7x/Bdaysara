@@ -411,7 +411,7 @@ p {
 
 .counter-digit .digit-flipper {
   display: inline-block;
- height: 1.1em; /* Adjust height as needed */
+ height: 1em; /* Adjust height as needed */
   font-size: 2em;
   line-height: 1;
   margin: 0 0.02em;
@@ -451,20 +451,23 @@ p {
   transform: rotateX(0deg);
 }
 
+./* Set styles for the bottom half of the digit-flipper */
 .digit-flipper__digit-bottom {
   background-color: #e74c3c; /* Set the background color for the bottom half */
   border-bottom-left-radius: 5px; /* Adjust border radius as needed */
   border-bottom-right-radius: 5px; /* Adjust border radius as needed */
-  -webkit-clip-path: inset(51% 0 0 0);
-  clip-path: inset(51% 0 0 0);
-  -webkit-transform: rotateX(90deg);
-  transform: rotateX(90deg);
+  -webkit-clip-path: inset(51% 0 0 0); /* Clip the bottom half to be initially hidden */
+  clip-path: inset(51% 0 0 0); /* Clip the bottom half to be initially hidden */
+  -webkit-transform: rotateX(90deg); /* Rotate the bottom half 90 degrees */
+  transform: rotateX(90deg); /* Rotate the bottom half 90 degrees */
 }
 
+/* Apply flip animation to the bottom half when flipped */
 .counter-digit .digit-flipper__digit--flip-bottom .digit-flipper__digit-bottom {
-  -webkit-animation: flip-bottom 0.3s ease-in 0s 1 forwards;
-  animation: flip-bottom 0.6s ease-in 0s 1 forwards;
+  -webkit-animation: flip-bottom 0.3s ease-in 0s 1 forwards; /* Flip animation for the bottom half */
+  animation: flip-bottom 0.6s ease-in 0s 1 forwards; /* Flip animation for the bottom half */
 }
+
 
 .counter-digit .digit-flipper__digit--flip-top .digit-flipper__digit-top {
   -webkit-animation: flip-top 0.3s ease-in 0s 1 forwards;
