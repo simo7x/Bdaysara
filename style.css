@@ -433,7 +433,7 @@ p {
 .counter-digit .digit-flipper__digit-bottom {
   color: black;
   display: block;
-  height: 50%;
+  height: 75%;
   position: absolute;
   -webkit-transform-origin: 50% 50%;
   transform-origin: 50% 50%;
