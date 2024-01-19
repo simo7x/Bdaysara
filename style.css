@@ -413,7 +413,7 @@ p {
   display: inline-block;
  height: 1em; /* Adjust height as needed */
   font-size: 2em;
-  line-height: 1;
+  line-height: 0.5;
   margin: 0 0.02em;
   -webkit-perspective: 300px;
   perspective: 300px;
